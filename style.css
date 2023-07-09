@@ -88,10 +88,10 @@ header {
 }
 
 .nav-bar ul li:hover {
-    color: var(--soft-orange);
+    color: var(--soft-red);
 }
 
-.main-container, .top, .top-left, .left-bottom, .bottom-right, .top-right, {
+.main-container, .top, .top-left, .left-bottom, .bottom-right, .top-right {
     display: flex;
     flex-direction: column;
 }
@@ -208,11 +208,6 @@ header {
 
 
 @media screen and (min-width: 600px) {
-    *, *::after, *::before {
-        margin: 0;
-        padding: 0;
-    }
-
     .menu-icon, .close-icon {
         display: none;
     }
@@ -237,21 +232,23 @@ header {
     }
 
     .nav-bar {
-        display: flex;
         margin: 0;
     }
 
     .nav-bar ul {
-        display: flex;
+        display: flex;    
     }
 
     .nav-bar ul li {
+        margin: 0;
+        margin-left: 30px;
         font-size: 1rem;
     }
 
     .top {
         flex-basis: 70%;
         display: flex;
+        flex-direction: row;
         margin-bottom: 50px;
     }
 
@@ -259,6 +256,7 @@ header {
         flex-basis: 70%;
         display: flex;
         flex-direction: column;
+        margin: 0;
         margin-right: 20px;
     }
 
@@ -271,10 +269,12 @@ header {
     .left-bottom {
         flex-basis: 40%;
         display: flex;
+        flex-direction: row;
     }
 
     .bottom-left {
         flex-basis: 50%;
+        margin: 0;
         margin-right: 20px;
     }
 
@@ -283,11 +283,13 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin: 0;
     }
 
     .bottom-right p {
         font-size: 1rem;
         line-height: 1.4rem;
+        margin: 0;
     }
 
 
